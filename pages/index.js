@@ -44,8 +44,6 @@ const Home = () => {
               Michael <br />
               <span>Podolsky,</span>
             </h1>
-            {/* <h3>Frontend Developer.</h3> */}
-
             <Typewriter
               skipAddStyles
               options={{
@@ -59,6 +57,7 @@ const Home = () => {
                 loop: true,
               }}
             />
+            <button>Contact me</button>
           </div>
           <div className={styles.rightContainer}>
             <div className={styles.iconsContainer}>

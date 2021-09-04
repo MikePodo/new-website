@@ -22,3 +22,7 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
+button {
+  font-family: "Red Hat Display", sans-serif;
+}
