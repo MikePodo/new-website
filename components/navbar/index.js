@@ -9,7 +9,7 @@ const Navbar = () => {
 
   return (
     <div className={styles.container}>
-      <h1>MikePodo.net</h1>
+      <h1 onClick={() => router.push("/")}>MikePodo.net</h1>
       <div className={styles.linksContainer}>
         <div className={styles.link} onClick={() => router.push("/")}>
           <h3>Home</h3>

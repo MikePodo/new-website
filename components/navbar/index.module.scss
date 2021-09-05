@@ -11,6 +11,11 @@
   z-index: 3;
   h1 {
     font-family: "Lobster", cursive;
+    cursor: pointer;
+    transition: all 0.2s;
+    &:hover {
+      transform: scale(1.05);
+    }
   }
 }
 
@@ -26,8 +31,9 @@
     font-weight: 500;
     font-size: 1.3rem;
     cursor: pointer;
+    transition: all 0.4s;
     &:hover {
-      opacity: 0.8;
+      opacity: 0.6;
     }
   }
   .navLine {

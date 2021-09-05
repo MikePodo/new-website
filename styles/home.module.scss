@@ -60,6 +60,7 @@
     transition: all 0.2s;
     &:hover {
       opacity: 0.7;
+      transform: scale(1.05);
     }
   }
 }
@@ -69,6 +70,33 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.profileContainer {
+  margin-top: 2rem;
+  position: relative;
+  .profileImage {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+    pointer-events: none;
+  }
+  .colorWheelContainer {
+    border-radius: 50%;
+    animation-name: spin-reverse;
+    animation-duration: 0.5s;
+    &:hover {
+      animation-name: spin;
+      animation-fill-mode: forwards;
+    }
+    .colorWheel {
+      pointer-events: none;
+      width: 100%;
+      height: 100%;
+    }
+  }
 }
 
 .iconsContainer {
@@ -82,11 +110,15 @@
   display: flex;
   align-items: center;
   margin: 0 5px;
+  img {
+    animation-name: spin-reverse;
+    animation-duration: 0.5s;
+  }
   &:hover {
     opacity: 0.7;
     img {
-      transition: all 0.5s ease;
-      transform: rotate(360deg);
+      animation-name: spin;
+      animation-fill-mode: forwards;
     }
   }
   h4 {
@@ -94,5 +126,22 @@
     font-size: 1.7rem;
     font-weight: 500;
     margin: 0 1rem;
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes spin-reverse {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
   }
 }

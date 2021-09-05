@@ -70,7 +70,20 @@ const Home = () => {
                 <h4>LinkedIn</h4>
               </div>
             </div>
-            <img src="/profile.png" alt="profile" />
+            <div className={styles.profileContainer}>
+              <img
+                src="/profile.png"
+                alt="profile"
+                className={styles.profileImage}
+              />
+              <div className={styles.colorWheelContainer}>
+                <img
+                  src="/color-wheel.svg"
+                  alt="color wheel"
+                  className={styles.colorWheel}
+                />
+              </div>
+            </div>
           </div>
         </div>
       </div>
