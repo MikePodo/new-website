@@ -1,9 +1,10 @@
 import React, { useState, useEffect, useRef } from "react";
 import NET from "vanta/dist/vanta.net.min";
+import Typewriter from "typewriter-effect";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import styles from "../styles/home.module.scss";
-
-import Typewriter from "typewriter-effect";
+import links from "../services/links";
 
 const Home = () => {
   const [vantaEffect, setVantaEffect] = useState(0);
@@ -34,6 +35,10 @@ const Home = () => {
     };
   }, [vantaEffect]);
 
+  const handleRedirect = (url) => {
+    window.open(url, "_blank");
+  };
+
   return (
     <div>
       <div ref={vantaContainerRef} className={styles.vantaContainer}>
@@ -61,12 +66,29 @@ const Home = () => {
           </div>
           <div className={styles.rightContainer}>
             <div className={styles.iconsContainer}>
-              <div className={styles.socialContainer}>
-                <img src="/github.svg" alt="github" />
+              <div
+                className={styles.socialContainer}
+                onClick={() => {
+                  handleRedirect(links.GITHUB);
+                }}
+              >
+                <FontAwesomeIcon
+                  icon={["fab", "github"]}
+                  className={styles.socialIcon}
+                />
+
                 <h4>Github</h4>
               </div>
-              <div className={styles.socialContainer}>
-                <img src="/linkedin.svg" alt="linkedin" />
+              <div
+                className={styles.socialContainer}
+                onClick={() => {
+                  handleRedirect(links.LINKEDIN);
+                }}
+              >
+                <FontAwesomeIcon
+                  icon={["fab", "linkedin"]}
+                  className={`${styles.socialIcon} ${styles.linkedin}`}
+                />
                 <h4>LinkedIn</h4>
               </div>
             </div>
@@ -77,11 +99,7 @@ const Home = () => {
                 className={styles.profileImage}
               />
               <div className={styles.colorWheelContainer}>
-                <img
-                  src="/color-wheel.svg"
-                  alt="color wheel"
-                  className={styles.colorWheel}
-                />
+                <div className={styles.colorWheel}></div>
               </div>
             </div>
           </div>

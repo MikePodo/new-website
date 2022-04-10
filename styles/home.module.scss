@@ -73,8 +73,10 @@
 }
 
 .profileContainer {
-  margin-top: 2rem;
+  margin-top: 5rem;
   position: relative;
+  width: 17rem;
+  height: 17rem;
   .profileImage {
     position: absolute;
     top: 50%;
@@ -82,19 +84,39 @@
     transform: translate(-50%, -50%);
     z-index: 5;
     pointer-events: none;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
   .colorWheelContainer {
-    border-radius: 50%;
-    animation-name: spin-reverse;
-    animation-duration: 0.5s;
+    position: absolute;
+    inset: 0;
+    width: calc(100% + 2.5rem);
+    height: calc(100% + 2.5rem);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     &:hover {
-      animation-name: spin;
-      animation-fill-mode: forwards;
+      .colorWheel {
+        animation-name: spin;
+        animation-fill-mode: forwards;
+      }
     }
     .colorWheel {
       pointer-events: none;
+      border-radius: 50%;
       width: 100%;
       height: 100%;
+      background: conic-gradient(
+        $red 120deg,
+        $orange 120deg 240deg,
+        $green 240deg 360deg
+      );
+      animation-name: spin-reverse;
+      animation-duration: 0.5s;
     }
   }
 }
@@ -110,17 +132,23 @@
   display: flex;
   align-items: center;
   margin: 0 5px;
-  img {
+  .socialIcon {
+    color: $green;
+    width: 3rem;
     animation-name: spin-reverse;
     animation-duration: 0.5s;
+    &.linkedin {
+      width: 2.9rem;
+    }
   }
   &:hover {
     opacity: 0.7;
-    img {
+    .socialIcon {
       animation-name: spin;
       animation-fill-mode: forwards;
     }
   }
+
   h4 {
     color: white;
     font-size: 1.7rem;
