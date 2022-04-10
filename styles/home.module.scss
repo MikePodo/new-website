@@ -26,11 +26,11 @@
     font-weight: 300;
   }
   h1 {
-    color: $red !important;
+    color: $primary !important;
     font-size: 5rem;
     font-weight: 800;
     span {
-      color: $red;
+      color: $primary;
       font-size: 5rem;
       font-weight: 800;
       margin-left: 2rem;
@@ -39,20 +39,20 @@
     }
   }
   span {
-    color: $orange;
+    color: $secondary;
     font-size: 3.2rem;
     font-weight: 500;
     display: inline-block;
     transform: translateY(-25px);
   }
   button {
-    background: $green;
+    background: $white;
     border: none;
     border-radius: 5px;
     width: min-content;
     white-space: nowrap;
     font-size: 1.8rem;
-    color: $gray;
+    color: $background;
     font-weight: 500;
     margin-top: 1rem;
     padding: 5px 45px;
@@ -91,8 +91,8 @@
   .colorWheelContainer {
     position: absolute;
     inset: 0;
-    width: calc(100% + 2.5rem);
-    height: calc(100% + 2.5rem);
+    width: calc(100% + 1.5rem);
+    height: calc(100% + 1.5rem);
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -101,7 +101,7 @@
     align-items: center;
     &:hover {
       .colorWheel {
-        animation-name: spin;
+        animation-name: spin-circle;
         animation-fill-mode: forwards;
       }
     }
@@ -111,11 +111,12 @@
       width: 100%;
       height: 100%;
       background: conic-gradient(
-        $red 120deg,
-        $orange 120deg 240deg,
-        $green 240deg 360deg
+        $primary 120deg,
+        $white 120deg 190deg,
+        $secondary 190deg 360deg
       );
-      animation-name: spin-reverse;
+      transform: rotate(20deg);
+      animation-name: spin-cicle-reverse;
       animation-duration: 0.5s;
     }
   }
@@ -133,7 +134,7 @@
   align-items: center;
   margin: 0 5px;
   .socialIcon {
-    color: $green;
+    color: $white;
     width: 3rem;
     animation-name: spin-reverse;
     animation-duration: 0.5s;
@@ -150,7 +151,7 @@
   }
 
   h4 {
-    color: white;
+    color: $white;
     font-size: 1.7rem;
     font-weight: 500;
     margin: 0 1rem;
@@ -171,5 +172,22 @@
   }
   to {
     transform: rotate(0deg);
+  }
+}
+
+@keyframes spin-circle {
+  from {
+    transform: rotate(20deg);
+  }
+  to {
+    transform: rotate(280deg);
+  }
+}
+@keyframes spin-cicle-reverse {
+  from {
+    transform: rotate(280deg);
+  }
+  to {
+    transform: rotate(20deg);
   }
 }
