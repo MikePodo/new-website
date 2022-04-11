@@ -1,4 +1,4 @@
-@import "variables.scss";
+@import "variables.module";
 
 .vantaContainer {
   width: 100%;
@@ -132,7 +132,7 @@
   cursor: pointer;
   display: flex;
   align-items: center;
-  margin: 0 5px;
+  margin: 0 3px;
   .socialIcon {
     color: $white;
     width: 3rem;

@@ -4,6 +4,8 @@ import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 import "../styles/globals.css";
 
+import ThemeProvider from "../styles/ThemeProvider";
+
 library.add(faGithub, faLinkedin);
 
 config.autoAddCss = false;
@@ -11,8 +13,10 @@ config.autoAddCss = false;
 function MyApp({ Component, pageProps }) {
   return (
     <div>
-      <Navbar />
-      <Component {...pageProps} />
+      <ThemeProvider>
+        <Navbar />
+        <Component {...pageProps} />
+      </ThemeProvider>
     </div>
   );
 }

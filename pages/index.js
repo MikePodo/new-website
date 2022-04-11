@@ -6,8 +6,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styles from "../styles/home.module.scss";
 import links from "../services/links";
 
+import ContactModal from "../components/ContactModal";
+
 const Home = () => {
   const [vantaEffect, setVantaEffect] = useState(0);
+  const [contactModalOpen, setContactModalOpen] = useState(false);
   const vantaContainerRef = useRef(null);
 
   useEffect(() => {
@@ -41,6 +44,7 @@ const Home = () => {
 
   return (
     <div>
+      <ContactModal open={contactModalOpen} setOpen={setContactModalOpen} />
       <div ref={vantaContainerRef} className={styles.vantaContainer}>
         <div className={styles.screen}>
           <div className={styles.leftContainer}>
@@ -64,7 +68,9 @@ const Home = () => {
                 loop: true,
               }}
             />
-            <button>Contact me</button>
+            <button onClick={() => setContactModalOpen(true)}>
+              Contact me
+            </button>
           </div>
           <div className={styles.rightContainer}>
             <div className={styles.iconsContainer}>

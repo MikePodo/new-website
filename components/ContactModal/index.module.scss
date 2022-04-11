@@ -1,0 +1,75 @@
+@import "../../styles/variables.module";
+
+.screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalContainer {
+  width: 40rem;
+  background: $background;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.header {
+  color: $primary;
+}
+.input {
+  margin: 1rem 0 0.5rem 0;
+  width: calc(50% - 1rem);
+
+  ::before {
+    border-bottom-color: $secondary !important;
+  }
+
+  ::after {
+    border-bottom-color: $white !important;
+  }
+
+  input,
+  textarea {
+    font-size: 1.1rem;
+    color: $white;
+  }
+}
+.inputLabel {
+  font-size: 1.1rem;
+  color: $secondary;
+  &:global.Mui-focused {
+    color: $white;
+  }
+}
+
+.inputHelperText {
+  color: $danger;
+  position: absolute;
+  top: 100%;
+}
+
+.inputsHeaderContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.subjectInput,
+.messageInput {
+  width: 100%;
+}
+
+.sendContainer {
+  margin-top: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  .sendButton {
+    width: 10rem;
+    &:global.Mui-disabled {
+      color: $secondary;
+      border-color: $secondary;
+      opacity: 0.3;
+    }
+  }
+}

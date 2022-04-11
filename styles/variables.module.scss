@@ -1,0 +1,16 @@
+$black: #000000;
+$white: #fbfff1;
+$gray: #464655;
+$background: #001e3c;
+$primary: #3baaff;
+$secondary: #2280df;
+$danger: #c34111;
+
+:export {
+  primary: $primary;
+  secondary: $secondary;
+  background: $background;
+  black: $black;
+  white: $white;
+  gray: $gray;
+}
