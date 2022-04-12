@@ -1,4 +1,4 @@
-import variables from "../styles/variables.module.scss";
+import variables from "~sass-variables";
 
 module.exports = {
   small: `screen and (max-width: ${variables.small})`,

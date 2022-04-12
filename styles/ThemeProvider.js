@@ -5,7 +5,7 @@ import {
   StyledEngineProvider,
 } from "@mui/material/styles";
 
-import styles from "./variables.module.scss";
+import styles from "~sass-variables";
 
 const theme = createTheme({
   typography: {

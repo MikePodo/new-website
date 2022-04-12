@@ -4,10 +4,10 @@ import Typewriter from "typewriter-effect";
 import Button from "@mui/material/Button";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import * as THREE from "three";
-import styles from "../styles/home.module.scss";
-import links from "../services/links";
+import styles from "~styles/home.module.scss";
+import links from "~services/links";
 
-import ContactModal from "../components/ContactModal";
+import ContactModal from "~components/ContactModal";
 
 const Home = () => {
   const [vantaEffect, setVantaEffect] = useState(0);

@@ -5,9 +5,9 @@ import useMediaQuery from "@mui/material/useMediaQuery";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import styles from "./index.module.scss";
-import { mediumSmall } from "../../services/mediaQuery";
+import { mediumSmall } from "~services/mediaQuery";
 
-import PageHead from "../PageHead";
+import PageHead from "~components/PageHead";
 
 const Navbar = () => {
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
