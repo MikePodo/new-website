@@ -19,7 +19,10 @@ export default function Document() {
           rel="stylesheet"
         ></link>
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r79/three.min.js"></script>
+        <script
+          src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r79/three.min.js"
+          async
+        ></script>
       </Head>
       <body>
         <Main />
