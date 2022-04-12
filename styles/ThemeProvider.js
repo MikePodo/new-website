@@ -12,6 +12,9 @@ const theme = createTheme({
     allVariants: {
       fontFamily: "Red Hat Display",
     },
+    button: {
+      textTransform: "none",
+    },
   },
   palette: {
     primary: {
@@ -19,6 +22,9 @@ const theme = createTheme({
     },
     secondary: {
       main: styles.secondary,
+    },
+    error: {
+      main: styles.danger,
     },
     background: {
       main: styles.background,

@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import NET from "vanta/dist/vanta.net.min";
 import Typewriter from "typewriter-effect";
+import Button from "@mui/material/Button";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import styles from "../styles/home.module.scss";
@@ -53,24 +54,30 @@ const Home = () => {
               Michael <br />
               <span>Podolsky,</span>
             </h1>
-            <Typewriter
-              skipAddStyles
-              options={{
-                strings: [
-                  "Frontend Developer.",
-                  "Software Engineer.",
-                  "Designer.",
-                  "React Developer.",
-                  "Coder.",
-                  "Builder.",
-                ],
-                autoStart: true,
-                loop: true,
-              }}
-            />
-            <button onClick={() => setContactModalOpen(true)}>
-              Contact me
-            </button>
+            <div className={styles.typeWriterContainer}>
+              <Typewriter
+                skipAddStyles
+                options={{
+                  strings: [
+                    "Frontend Developer.",
+                    "Software Engineer.",
+                    "Designer.",
+                    "React Developer.",
+                    "Coder.",
+                    "Builder.",
+                  ],
+                  autoStart: true,
+                  loop: true,
+                }}
+              />
+            </div>
+            <Button
+              variant="contained"
+              className={styles.contactButton}
+              onClick={() => setContactModalOpen(true)}
+            >
+              Contact Me
+            </Button>
           </div>
           <div className={styles.rightContainer}>
             <div className={styles.iconsContainer}>

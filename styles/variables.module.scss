@@ -4,7 +4,7 @@ $gray: #464655;
 $background: #001e3c;
 $primary: #3baaff;
 $secondary: #2280df;
-$danger: #c34111;
+$danger: #ce4d1f;
 
 :export {
   primary: $primary;
@@ -13,4 +13,5 @@ $danger: #c34111;
   black: $black;
   white: $white;
   gray: $gray;
+  danger: $danger;
 }

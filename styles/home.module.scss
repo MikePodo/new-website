@@ -38,29 +38,24 @@
       transform: translateY(-25px);
     }
   }
-  span {
-    color: $secondary;
-    font-size: 3.2rem;
-    font-weight: 500;
-    display: inline-block;
-    transform: translateY(-25px);
+  .typeWriterContainer {
+    span {
+      color: $secondary;
+      font-size: 3.2rem;
+      font-weight: 500;
+      display: inline-block;
+      transform: translateY(-25px);
+    }
   }
-  button {
-    background: $white;
-    border: none;
-    border-radius: 5px;
+  .contactButton {
     width: min-content;
     white-space: nowrap;
-    font-size: 1.8rem;
-    color: $background;
-    font-weight: 500;
+    background: $white;
+    font-size: 1.5rem;
+    padding: 0.2rem 2rem;
     margin-top: 1rem;
-    padding: 5px 45px;
-    cursor: pointer;
-    transition: all 0.2s;
     &:hover {
-      opacity: 0.7;
-      transform: scale(1.05);
+      opacity: 0.8;
     }
   }
 }

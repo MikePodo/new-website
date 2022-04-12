@@ -32,6 +32,11 @@
   textarea {
     font-size: 1.1rem;
     color: $white;
+    &:global.Mui-disabled {
+      color: $secondary;
+      -webkit-text-fill-color: unset;
+      opacity: 0.4;
+    }
   }
 }
 .inputLabel {
@@ -39,6 +44,10 @@
   color: $secondary;
   &:global.Mui-focused {
     color: $white;
+  }
+  &:global.Mui-disabled {
+    color: $secondary;
+    opacity: 0.4;
   }
 }
 
@@ -72,4 +81,9 @@
       opacity: 0.3;
     }
   }
+}
+
+.alert {
+  background: $white;
+  font-weight: 500;
 }
