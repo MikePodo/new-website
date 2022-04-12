@@ -6,6 +6,12 @@ $primary: #3baaff;
 $secondary: #2280df;
 $danger: #ce4d1f;
 
+$large: 1500px;
+$mediumLarge: 1250px;
+$medium: 900px;
+$mediumSmall: 750px;
+$small: 600px;
+
 :export {
   primary: $primary;
   secondary: $secondary;
@@ -14,4 +20,9 @@ $danger: #ce4d1f;
   white: $white;
   gray: $gray;
   danger: $danger;
+  large: $large;
+  mediumLarge: $mediumLarge;
+  medium: $medium;
+  mediumSmall: $mediumSmall;
+  small: $small;
 }

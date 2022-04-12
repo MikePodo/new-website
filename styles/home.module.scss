@@ -3,6 +3,8 @@
 .vantaContainer {
   width: 100%;
   min-height: 100vh;
+  position: fixed;
+  top: 0;
 }
 
 .screen {
@@ -13,6 +15,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @media screen and (max-width: $large) {
+    width: 80%;
+  }
+  @media screen and (max-width: $medium) {
+    flex-direction: column;
+    margin-top: 6rem;
+    min-height: unset;
+  }
 }
 
 .leftContainer {
@@ -20,15 +30,29 @@
   height: 100%;
   flex-direction: column;
   justify-content: center;
+  z-index: 1;
+
   h2 {
     color: $white;
     font-size: 2.5rem;
     font-weight: 300;
+    @media screen and (max-width: $mediumLarge) {
+      font-size: 2rem;
+    }
+    @media screen and (max-width: $mediumSmall) {
+      font-size: 1.5rem;
+    }
   }
   h1 {
     color: $primary !important;
     font-size: 5rem;
     font-weight: 800;
+    @media screen and (max-width: $mediumLarge) {
+      font-size: 4rem;
+    }
+    @media screen and (max-width: $mediumSmall) {
+      font-size: 3rem;
+    }
     span {
       color: $primary;
       font-size: 5rem;
@@ -36,15 +60,30 @@
       margin-left: 2rem;
       display: inline-block;
       transform: translateY(-25px);
+      @media screen and (max-width: $mediumLarge) {
+        font-size: 4rem;
+      }
+      @media screen and (max-width: $mediumSmall) {
+        font-size: 3rem;
+        transform: translateY(-20px);
+      }
     }
   }
   .typeWriterContainer {
+    white-space: nowrap;
+    width: min-content;
     span {
       color: $secondary;
       font-size: 3.2rem;
       font-weight: 500;
       display: inline-block;
       transform: translateY(-25px);
+      @media screen and (max-width: $mediumLarge) {
+        font-size: 2.2rem;
+      }
+      @media screen and (max-width: $mediumSmall) {
+        font-size: 1.6rem;
+      }
     }
   }
   .contactButton {
@@ -57,6 +96,16 @@
     &:hover {
       opacity: 0.8;
     }
+    @media screen and (max-width: $mediumLarge) {
+      font-size: 1rem;
+    }
+    @media screen and (max-width: $medium) {
+      width: 100%;
+    }
+    @media screen and (max-width: $mediumSmall) {
+      font-size: 0.9rem;
+      margin-top: 0rem;
+    }
   }
 }
 
@@ -65,6 +114,9 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  @media screen and (max-width: $medium) {
+    flex-direction: column-reverse;
+  }
 }
 
 .profileContainer {
@@ -72,6 +124,17 @@
   position: relative;
   width: 17rem;
   height: 17rem;
+  @media screen and (max-width: $mediumLarge) {
+    width: 14rem;
+    height: 14rem;
+  }
+  @media screen and (max-width: $medium) {
+    margin-top: 3.5rem;
+  }
+  @media screen and (max-width: $mediumSmall) {
+    height: 12rem;
+    width: 12rem;
+  }
   .profileImage {
     position: absolute;
     top: 50%;
@@ -121,6 +184,9 @@
   display: flex;
   align-items: center;
   transform: translateY(50%);
+  @media screen and (max-width: $medium) {
+    margin: 2rem 0 5rem 0;
+  }
 }
 
 .socialContainer {
@@ -136,6 +202,18 @@
     &.linkedin {
       width: 2.9rem;
     }
+    @media screen and (max-width: $mediumLarge) {
+      width: 2.4rem;
+      &.linkedin {
+        width: 2.4rem;
+      }
+    }
+    @media screen and (max-width: $mediumSmall) {
+      width: 2.1rem;
+      &.linkedin {
+        width: 2.1rem;
+      }
+    }
   }
   &:hover {
     opacity: 0.7;
@@ -150,6 +228,12 @@
     font-size: 1.7rem;
     font-weight: 500;
     margin: 0 1rem;
+    @media screen and (max-width: $mediumLarge) {
+      font-size: 1.4rem;
+    }
+    @media screen and (max-width: $mediumSmall) {
+      font-size: 1.2rem;
+    }
   }
 }
 

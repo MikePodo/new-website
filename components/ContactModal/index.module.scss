@@ -11,14 +11,21 @@
   background: $background;
   border-radius: 10px;
   padding: 1rem;
+  margin: 0.8rem;
 }
 
 .header {
   color: $primary;
+  @media screen and (max-width: $medium) {
+    font-size: 1.5rem;
+  }
 }
 .input {
   margin: 1rem 0 0.5rem 0;
   width: calc(50% - 1rem);
+  @media screen and (max-width: $medium) {
+    width: calc(50% - 0.5rem);
+  }
 
   ::before {
     border-bottom-color: $secondary !important;
