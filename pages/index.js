@@ -3,7 +3,7 @@ import NET from "vanta/dist/vanta.net.min";
 import Typewriter from "typewriter-effect";
 import Button from "@mui/material/Button";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
+import * as THREE from "three";
 import styles from "../styles/home.module.scss";
 import links from "../services/links";
 
@@ -18,9 +18,10 @@ const Home = () => {
     if (!vantaEffect) {
       setVantaEffect(
         NET({
+          THREE: THREE,
           el: vantaContainerRef.current,
           mouseControls: true,
-          touchControls: true,
+          touchControls: false,
           gyroControls: false,
           minHeight: 200.0,
           minWidth: 200.0,
