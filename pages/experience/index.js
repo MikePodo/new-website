@@ -102,7 +102,8 @@ const Experience = () => {
               </li>
               <li>
                 <span>Featured Listings:</span> Connected backend routes to the
-                UI to show a carousel of the website's most viewed listings.
+                UI to show a carousel of the website&apos;s most viewed
+                listings.
               </li>
             </ul>
           </div>
