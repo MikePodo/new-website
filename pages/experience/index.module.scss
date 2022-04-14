@@ -1,0 +1,131 @@
+@import "~sass-variables";
+
+.screen {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 80px; //Navbar spacing
+  @media screen and (max-width: $medium) {
+    padding-top: 70px; //Navbar spacing
+  }
+  @media screen and (max-width: $mediumSmall) {
+    align-items: flex-start;
+  }
+}
+
+.contentContainer {
+  height: fit-content;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  @media screen and (max-width: $medium) {
+    flex-direction: column;
+  }
+  @media screen and (max-width: $mediumSmall) {
+    width: 80%;
+    margin-top: 1rem;
+  }
+}
+
+.tabsContainer {
+  @media screen and (max-width: $mediumSmall) {
+    width: 100vw;
+  }
+  & :global .MuiTabs-scroller {
+    & :global .MuiTabs-indicator {
+      width: 4px;
+    }
+  }
+  & :global .MuiTabs-scrollButtons {
+    color: $white;
+  }
+}
+
+.tab {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 1rem 0;
+  &:global.MuiTab-textColorPrimary {
+    color: $white;
+  }
+  &:global.Mui-selected {
+    color: $primary;
+  }
+  @media screen and (max-width: $medium) {
+    margin: 0 0.2rem;
+    font-size: 1.3rem;
+  }
+  @media screen and (max-width: $mediumSmall) {
+    margin: 0 0.2rem;
+    font-size: 1.2rem;
+  }
+}
+
+.tabPanel {
+  width: 35rem;
+  margin-left: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100%;
+  @media screen and (max-width: $mediumLarge) {
+    margin-left: 2rem;
+  }
+  @media screen and (max-width: $medium) {
+    margin: 2rem 0 0 0;
+  }
+  @media screen and (max-width: $mediumSmall) {
+    width: 100%;
+  }
+  h2 {
+    color: $white;
+    font-size: 1.5rem;
+    font-weight: 500;
+    white-space: nowrap;
+    @media screen and (max-width: $mediumLarge) {
+      white-space: unset;
+    }
+    @media screen and (max-width: $medium) {
+      font-size: 1.3rem;
+    }
+    span {
+      color: $primary;
+      &.subText {
+        font-size: 0.9rem;
+        color: $white;
+        @media screen and (max-width: $medium) {
+          font-size: 0.8rem;
+        }
+      }
+    }
+  }
+  h3 {
+    color: $lightgray;
+    font-weight: 400;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    @media screen and (max-width: $medium) {
+      font-size: 0.9rem;
+    }
+  }
+  ul {
+    margin: 0;
+    padding-left: 1.2rem;
+    li {
+      color: $white;
+      margin-bottom: 1rem;
+      font-size: 0.95rem;
+      list-style-type: circle;
+      @media screen and (max-width: $medium) {
+        font-size: 0.9rem;
+      }
+      span {
+        font-weight: 600;
+      }
+    }
+  }
+}

@@ -1,12 +1,5 @@
 @import "~sass-variables";
 
-.vantaContainer {
-  width: 100%;
-  min-height: 100vh;
-  position: fixed;
-  top: 0;
-}
-
 .screen {
   width: 60%;
   max-width: 80rem;
@@ -199,6 +192,7 @@
     width: 3rem;
     animation-name: spin-reverse;
     animation-duration: 0.5s;
+    margin: 0 0.5rem;
     &.linkedin {
       width: 2.9rem;
     }
@@ -227,7 +221,7 @@
     color: $white;
     font-size: 1.7rem;
     font-weight: 500;
-    margin: 0 1rem;
+    margin: 0 0.5rem;
     @media screen and (max-width: $mediumLarge) {
       font-size: 1.4rem;
     }

@@ -6,7 +6,8 @@ import "~styles/globals.css";
 
 import ThemeProvider from "~styles/ThemeProvider";
 
-import Navbar from "~components/navbar";
+import Navbar from "~components/Navbar";
+import Vanta from "~components/Vanta";
 
 library.add(faGithub, faLinkedin, faBars);
 
@@ -16,6 +17,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <div>
       <ThemeProvider>
+        <Vanta />
         <Navbar />
         <Component {...pageProps} />
       </ThemeProvider>
