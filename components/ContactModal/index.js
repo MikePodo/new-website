@@ -64,7 +64,7 @@ const ContactModal = ({ open, setOpen }) => {
         message: "Thanks for messaging! Expect a response shortly.",
       });
     } catch (e) {
-      console.log(e);
+      console.log("Error sending email: ", e);
       setToast({
         severity: "error",
         message: "There was an issue sending your message. Please try again.",
