@@ -1,8 +1,35 @@
 @import "~sass-variables";
 
+.screen {
+  height: 75vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 3rem;
+  opacity: 0;
+  transition: all 1s;
+
+  @media screen and (max-width: $mediumLarge) {
+    margin: 0 1.5rem;
+  }
+  @media screen and (max-width: $small) {
+    height: 55vh;
+  }
+
+  &:nth-of-type(2n) {
+    transform: translateX(50px);
+  }
+  &:nth-of-type(2n + 1) {
+    transform: translateX(-50px);
+  }
+  &.visible {
+    transform: translateX(0px);
+    transition: all 1s;
+    opacity: 1;
+  }
+}
+
 .container {
-  height: 100vh;
-  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -11,10 +38,23 @@
 
 .title {
   color: $white;
+  @media screen and (max-width: $large) {
+    font-size: 1.6rem;
+  }
+  @media screen and (max-width: $small) {
+    font-size: 1.4rem;
+  }
 }
 
 .subTitle {
   color: $lightgray;
+  font-weight: 500;
+  @media screen and (max-width: $large) {
+    font-size: 1.3rem;
+  }
+  @media screen and (max-width: $small) {
+    font-size: 1.2rem;
+  }
 }
 
 .imageContainer {
@@ -42,16 +82,33 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  @media screen and (max-width: $mediumSmall) {
+    opacity: 1;
+  }
+
   h3 {
     color: $white;
     font-size: 1.9rem;
     font-weight: 500;
+    @media screen and (max-width: $large) {
+      font-size: 1.5rem;
+    }
+    @media screen and (max-width: $small) {
+      font-size: 1.3rem;
+    }
   }
   ul {
     padding-left: 0;
     li {
       color: $white;
       font-size: 1.3rem;
+      @media screen and (max-width: $large) {
+        font-size: 1.2rem;
+      }
+      @media screen and (max-width: $small) {
+        font-size: 1rem;
+      }
     }
   }
 }
@@ -60,4 +117,10 @@
   width: 40rem;
   border-radius: 10px;
   display: block;
+  @media screen and (max-width: $large) {
+    width: 30rem;
+  }
+  @media screen and (max-width: $small) {
+    width: 100%;
+  }
 }

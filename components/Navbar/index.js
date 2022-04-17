@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 import SwipeableDrawer from "@mui/material/SwipeableDrawer";
 import useMediaQuery from "@mui/material/useMediaQuery";
@@ -11,11 +11,17 @@ import PageHead from "~components/PageHead";
 
 const Navbar = () => {
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
 
   const router = useRouter();
   const isMobile = useMediaQuery(mediumSmall);
 
   const { pathname } = router;
+
+  useEffect(() => {
+    setScrolled(window.scrollY > 0);
+    window.addEventListener("scroll", () => setScrolled(window.scrollY > 0));
+  }, []);
 
   const handleRedirect = (route) => {
     router.push(route);
@@ -28,7 +34,7 @@ const Navbar = () => {
   return (
     <>
       <PageHead route={pathname} />
-      <div className={styles.container}>
+      <div className={`${styles.container} ${scrolled ? styles.scrolled : ""}`}>
         <h1 onClick={() => router.push("/")} className={styles.navHeader}>
           MikePodo.net
         </h1>
