@@ -16,6 +16,19 @@
   }
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  color: $white;
+  margin: 0 auto;
+  font-weight: 500;
+  font-size: 2rem;
+}
+
 .contentContainer {
   height: fit-content;
   display: flex;
@@ -46,7 +59,7 @@
 }
 
 .tab {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-weight: 600;
   margin: 1rem 0;
   &:global.MuiTab-textColorPrimary {
@@ -54,6 +67,9 @@
   }
   &:global.Mui-selected {
     color: $primary;
+  }
+  @media screen and (max-width: $large) {
+    font-size: 1.5rem;
   }
   @media screen and (max-width: $medium) {
     margin: 0 0.2rem;
@@ -83,9 +99,12 @@
   }
   h2 {
     color: $white;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     font-weight: 500;
     white-space: nowrap;
+    @media screen and (max-width: $large) {
+      font-size: 1.5rem;
+    }
     @media screen and (max-width: $mediumLarge) {
       white-space: unset;
     }
@@ -106,8 +125,11 @@
   h3 {
     color: $lightgray;
     font-weight: 400;
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin-bottom: 1rem;
+    @media screen and (max-width: $large) {
+      font-size: 1rem;
+    }
     @media screen and (max-width: $medium) {
       font-size: 0.9rem;
     }
@@ -118,8 +140,11 @@
     li {
       color: $white;
       margin-bottom: 1rem;
-      font-size: 0.95rem;
+      font-size: 1.1rem;
       list-style-type: circle;
+      @media screen and (max-width: $large) {
+        font-size: 0.95rem;
+      }
       @media screen and (max-width: $medium) {
         font-size: 0.9rem;
       }

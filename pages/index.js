@@ -80,7 +80,7 @@ const Home = () => {
           </div>
           <div className={styles.profileContainer}>
             <img
-              src="/profile.png"
+              src="/assets/profile.png"
               alt="profile"
               className={styles.profileImage}
             />
