@@ -21,7 +21,7 @@ const Project = ({
       <VisibilitySensor
         onChange={onChangeVisibility}
         partialVisibility
-        offset={{ top: 200, bottom: 200 }}
+        offset={{ top: 300, bottom: 150 }}
       >
         <div className={styles.container}>
           <h1 className={styles.title}>{title}</h1>

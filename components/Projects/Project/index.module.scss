@@ -1,19 +1,15 @@
 @import "~sass-variables";
 
 .screen {
-  height: 75vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 3rem;
+  margin: 0 3rem 6rem 3rem;
   opacity: 0;
   transition: all 1s;
 
   @media screen and (max-width: $mediumLarge) {
-    margin: 0 1.5rem;
-  }
-  @media screen and (max-width: $small) {
-    height: 42.5vh;
+    margin: 0 1.5rem 5rem 1.5rem;
   }
 
   &:nth-of-type(2n) {

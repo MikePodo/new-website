@@ -28,7 +28,7 @@ module.exports = {
     },
     {
       title: "Ignite",
-      subtitle: "a site utilizing an API to display categorized video games",
+      subtitle: "a site utilizing an API to display categorized games",
       image: "/assets/projects/ignite.jpg",
       technologies: [
         "React",
