@@ -6,8 +6,6 @@ import { certificates } from "~services/certificatesService";
 import Certificate from "~components/Certificates/Certificate";
 
 const Certificates = () => {
-  console.log(certificates);
-
   return (
     <div className={styles.screen}>
       {certificates.map((certificate) => (

@@ -1,0 +1,24 @@
+@import "~sass-variables";
+
+.screen {
+  width: 100%;
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  h1 {
+    color: $white;
+    font-weight: 800;
+    font-size: 3.5rem;
+  }
+  h2 {
+    color: $white;
+    font-weight: 400;
+    margin-bottom: 1rem;
+  }
+}

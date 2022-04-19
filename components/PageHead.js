@@ -5,22 +5,22 @@ const PageHead = ({ route }) => {
   const getTitle = () => {
     switch (route) {
       case "/":
-        return "Home";
+        return "";
       case "/experience":
-        return "Experience";
+        return " | Experience";
       case "/projects":
-        return "Projects";
-      case "/certificates":
-        return "Certificates";
+        return " | Projects";
+      case " | /certificates":
+        return " | Certificates";
       default:
-        return "Developer";
+        return " | Developer";
     }
   };
 
   return (
     <div>
       <Head>
-        <title>{`MikePodo | ${getTitle()}`}</title>
+        <title>{`MikePodo${getTitle()}`}</title>
       </Head>
     </div>
   );
