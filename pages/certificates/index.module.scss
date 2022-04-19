@@ -1,0 +1,14 @@
+@import "~sass-variables";
+
+.screen {
+  min-height: 100vh;
+  position: relative;
+  padding-top: 80px; //Navbar spacing
+  @media screen and (max-width: $medium) {
+    padding-top: 70px; //Navbar spacing
+  }
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  overflow: hidden;
+}

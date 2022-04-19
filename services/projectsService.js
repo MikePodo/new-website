@@ -3,7 +3,7 @@ module.exports = {
     {
       title: "Twitterclone",
       subtitle: "a semi-functioning clone of Twitter",
-      image: "/assets/twitter.jpg",
+      image: "/assets/projects/twitter.jpg",
       technologies: [
         "React",
         "Sass",
@@ -15,14 +15,14 @@ module.exports = {
     {
       title: "Portfolio v2",
       subtitle: "v2 of mikepodo.net",
-      image: "/assets/portfolio2.jpg",
+      image: "/assets/projects/portfolio2.jpg",
       technologies: ["React", "Styled-Components", "Framer Motion"],
       url: "https://mikepodo.netlify.app",
     },
     {
       title: "Ignite",
       subtitle: "a site utilizing an API to display categorized video games",
-      image: "/assets/ignite.jpg",
+      image: "/assets/projects/ignite.jpg",
       technologies: [
         "React",
         "React-Router",
@@ -36,7 +36,7 @@ module.exports = {
     {
       title: "Capture",
       subtitle: "a template website for any general business",
-      image: "/assets/capture.jpg",
+      image: "/assets/projects/capture.jpg",
       technologies: [
         "React",
         "React-Router",
@@ -48,42 +48,42 @@ module.exports = {
     {
       title: "Waves",
       subtitle: "a React media player",
-      image: "/assets/waves.jpg",
+      image: "/assets/projects/waves.jpg",
       technologies: ["React", "Sass"],
       url: "https://mikepodo-waves.netlify.app/",
     },
     {
       title: "Coolors",
       subtitle: "a color-picking toolkit for web developers",
-      image: "/assets/coolors.jpg",
+      image: "/assets/projects/coolors.jpg",
       technologies: ["JavaScript", "HTML", "Sass"],
       url: "https://mikepodo-coolors.netlify.app/",
     },
     {
       title: "Beatmaker",
       subtitle: "a musical drum beat site",
-      image: "/assets/beatmaker.jpg",
+      image: "/assets/projects/beatmaker.jpg",
       technologies: ["JavaScript", "HTML", "Sass"],
       url: "https://mikepodo-beatmaker.netlify.app/",
     },
     {
       title: "Todo List",
       subtitle: "a beginner programmer's todo list application",
-      image: "/assets/todolist.jpg",
+      image: "/assets/projects/todolist.jpg",
       technologies: ["JavaScript", "HTML", "Sass"],
       url: "https://mikepodo-todolist.netlify.app/",
     },
     {
       title: "Portfolio v1",
       subtitle: "v1 of mikepodo.net",
-      image: "/assets/portfolio1.jpg",
+      image: "/assets/projects/portfolio1.jpg",
       technologies: ["HTML", "Sass"],
       url: "https://mikepodo-portfolio.netlify.app/",
     },
     {
       title: "BMI Calculator",
       subtitle: "a calculator used to find one's body mass index",
-      image: "/assets/bmi.jpg",
+      image: "/assets/projects/bmi.jpg",
       technologies: ["JavaScript", "HTML", "Sass"],
       url: "https://mikepodo-bmi-calculator.netlify.app/",
     },

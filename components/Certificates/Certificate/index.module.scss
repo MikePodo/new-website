@@ -1,0 +1,58 @@
+@import "~sass-variables";
+
+.screen {
+  height: 75vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 3rem;
+  opacity: 0;
+  transition: all 1s;
+
+  @media screen and (max-width: $mediumLarge) {
+    margin: 0 1.5rem;
+  }
+  @media screen and (max-width: $small) {
+    height: 42.5vh;
+  }
+
+  &:nth-of-type(2n) {
+    transform: translateX(50px);
+  }
+  &:nth-of-type(2n + 1) {
+    transform: translateX(-50px);
+  }
+  &.visible {
+    transform: translateX(0px);
+    transition: all 1s;
+    opacity: 1;
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.imageContainer {
+  width: fit-content;
+  height: max-content;
+  margin-top: 1rem;
+  border-radius: 10px;
+  z-index: 5;
+  position: relative;
+}
+
+.image {
+  width: 40rem;
+  border-radius: 10px;
+  display: block;
+  @media screen and (max-width: $large) {
+    width: 30rem;
+  }
+  @media screen and (max-width: $small) {
+    width: 100%;
+  }
+}
