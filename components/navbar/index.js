@@ -127,6 +127,9 @@ const Navbar = () => {
               >
                 <h4>Certificates</h4>
               </div>
+              <h6 className={styles.mobileFooter}>
+                &copy; 2022 Michael Podolsky
+              </h6>
             </SwipeableDrawer>
           </>
         )}

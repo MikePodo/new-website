@@ -1,0 +1,13 @@
+@import "~sass-variables";
+
+.footer {
+  position: absolute;
+  bottom: 5px;
+  right: 10px;
+  color: $lightgray;
+  font-size: 1rem;
+  font-weight: 200;
+  @media screen and (max-width: $mediumSmall) {
+    display: none;
+  }
+}

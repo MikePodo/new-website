@@ -1,6 +1,13 @@
 module.exports = {
   projects: [
     {
+      title: "Punctually",
+      subtitle: "a schedule generator app demo (school project)",
+      image: "/assets/projects/punctually.jpg",
+      technologies: ["NextJS", "Sass"],
+      url: "https://punctually.vercel.app",
+    },
+    {
       title: "Twitterclone",
       subtitle: "a semi-functioning clone of Twitter",
       image: "/assets/projects/twitter.jpg",

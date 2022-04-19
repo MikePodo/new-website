@@ -23,10 +23,10 @@ const Project = ({
         partialVisibility
         offset={{ top: 200, bottom: 200 }}
       >
-        <div className={styles.container} onClick={handleOpenUrl}>
+        <div className={styles.container}>
           <h1 className={styles.title}>{title}</h1>
           <h2 className={styles.subTitle}>{subtitle}</h2>
-          <div className={styles.imageContainer}>
+          <div className={styles.imageContainer} onClick={handleOpenUrl}>
             <img className={styles.image} src={image} alt={title} />
             <div className={styles.imageOverlay}>
               <h3>Technologies Used:</h3>

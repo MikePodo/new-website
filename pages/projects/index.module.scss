@@ -4,11 +4,12 @@
   min-height: 100vh;
   position: relative;
   padding-top: 80px; //Navbar spacing
-  @media screen and (max-width: $medium) {
-    padding-top: 70px; //Navbar spacing
-  }
+  padding-bottom: 5rem;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   overflow: hidden;
+  @media screen and (max-width: $medium) {
+    padding-top: 70px; //Navbar spacing
+  }
 }

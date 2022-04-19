@@ -6,6 +6,8 @@ import useMediaQuery from "@mui/material/useMediaQuery";
 import styles from "./index.module.scss";
 import { medium } from "~services/mediaQuery";
 
+import Footer from "~components/Footer";
+
 const Experience = () => {
   const [value, setValue] = useState(0);
   const isMobile = useMediaQuery(medium);
@@ -130,6 +132,7 @@ const Experience = () => {
           )}
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

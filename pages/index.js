@@ -7,6 +7,7 @@ import styles from "~styles/home.module.scss";
 import links from "~services/links";
 
 import ContactModal from "~components/ContactModal";
+import Footer from "~components/Footer";
 
 const Home = () => {
   const [contactModalOpen, setContactModalOpen] = useState(false);
@@ -90,6 +91,7 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };
