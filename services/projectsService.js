@@ -2,7 +2,7 @@ module.exports = {
   projects: [
     {
       title: "Punctually",
-      subtitle: "a schedule generator app demo (school project)",
+      subtitle: "a schedule generator app demo",
       image: "/assets/projects/punctually.jpg",
       technologies: ["NextJS", "Sass"],
       url: "https://punctually.vercel.app",
