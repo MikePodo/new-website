@@ -2,13 +2,17 @@
 
 .screen {
   width: 100%;
-  min-height: fill-available;
+  min-height: 100vh;
   flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   position: relative;
+  //Safari viewport height fix
+  @supports (-webkit-touch-callout: none) {
+    min-height: -webkit-fill-available;
+  }
   h1 {
     color: $white;
     font-weight: 800;

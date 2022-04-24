@@ -2,13 +2,17 @@
 
 .screen {
   width: 100%;
-  min-height: fill-available;
+  min-height: 100vh;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   padding-top: 80px; //Navbar spacing
   padding-bottom: 5rem;
+  //Safari viewport height fix
+  @supports (-webkit-touch-callout: none) {
+    min-height: -webkit-fill-available;
+  }
   @media screen and (max-width: $medium) {
     padding-top: 70px; //Navbar spacing
   }
