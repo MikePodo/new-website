@@ -79,6 +79,15 @@
   align-items: center;
   justify-content: space-between;
   padding: 1rem;
+  div {
+    &:global.MuiPaper-root {
+      background: $background;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 2.5rem;
+    }
+  }
 }
 
 .mobileNavMenuIcon {
@@ -87,19 +96,6 @@
   cursor: pointer;
   &:hover {
     opacity: 0.7;
-  }
-}
-
-.mobileNavContainer {
-  div {
-    &:global.MuiPaper-root {
-      // width: 40%;
-      background: $background;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding-top: 2.5rem;
-    }
   }
 }
 
@@ -129,11 +125,22 @@
   }
 }
 
-.mobileFooter {
+.mobileFooterContainer {
   position: absolute;
-  bottom: 5px;
-  right: 10px;
+  bottom: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mobileFooterResumeBtn {
+  width: 90%;
+}
+
+.mobileFooter {
   color: $lightgray;
   font-size: 0.8rem;
   font-weight: 200;
+  margin-bottom: 0.5rem;
 }

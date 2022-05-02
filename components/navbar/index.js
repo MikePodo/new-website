@@ -2,9 +2,11 @@ import React, { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 import SwipeableDrawer from "@mui/material/SwipeableDrawer";
 import useMediaQuery from "@mui/material/useMediaQuery";
+import Button from "@mui/material/Button";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import styles from "./index.module.scss";
+import { RESUME } from "~services/links";
 import { mediumSmall } from "~services/mediaQuery";
 
 import PageHead from "~components/PageHead";
@@ -127,9 +129,19 @@ const Navbar = () => {
               >
                 <h4>Certificates</h4>
               </div>
-              <h6 className={styles.mobileFooter}>
-                &copy; 2022 Michael Podolsky
-              </h6>
+              <div className={styles.mobileFooterContainer}>
+                <h6 className={styles.mobileFooter}>
+                  &copy; 2022 Michael Podolsky
+                </h6>
+                <Button
+                  variant="outlined"
+                  size={isMobile ? "normal" : "large"}
+                  className={styles.mobileFooterResumeBtn}
+                  onClick={() => window.open(RESUME, "_blank")}
+                >
+                  View Resume
+                </Button>
+              </div>
             </SwipeableDrawer>
           </>
         )}

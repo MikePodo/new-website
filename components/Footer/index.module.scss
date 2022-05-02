@@ -1,6 +1,20 @@
 @import "~sass-variables";
 
-.footer {
+.footerResumeBtn {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  width: 10rem;
+  @media screen and (max-width: $mediumLarge) {
+    bottom: 8px;
+    left: 8px;
+  }
+  @media screen and (max-width: $mediumSmall) {
+    display: none;
+  }
+}
+
+.footerText {
   position: absolute;
   bottom: 5px;
   right: 10px;

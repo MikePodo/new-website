@@ -17,7 +17,7 @@ const Home = () => {
   };
 
   return (
-    <div>
+    <div className={styles.footerPositioner}>
       <ContactModal open={contactModalOpen} setOpen={setContactModalOpen} />
       <div className={styles.screen}>
         <div className={styles.leftContainer}>

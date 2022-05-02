@@ -1,11 +1,9 @@
 import React, { useState, useEffect, useRef } from "react";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
-import Button from "@mui/material/Button";
 import useMediaQuery from "@mui/material/useMediaQuery";
 
 import styles from "./index.module.scss";
-import { RESUME } from "~services/links";
 import { medium } from "~services/mediaQuery";
 
 import Footer from "~components/Footer";
@@ -134,14 +132,6 @@ const Experience = () => {
           )}
         </div>
       </div>
-      <Button
-        variant="contained"
-        size={isMobile ? "normal" : "large"}
-        className={styles.resumeBtn}
-        onClick={() => window.open(RESUME, "_blank")}
-      >
-        View Resume
-      </Button>
       <Footer />
     </div>
   );

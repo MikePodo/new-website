@@ -1,5 +1,9 @@
 @import "~sass-variables";
 
+.footerPositioner {
+  position: relative;
+}
+
 .screen {
   width: 60%;
   max-width: 80rem;
@@ -178,7 +182,7 @@
   align-items: center;
   transform: translateY(50%);
   @media screen and (max-width: $medium) {
-    margin: 2rem 0 5rem 0;
+    margin: 2rem 0;
   }
 }
 
