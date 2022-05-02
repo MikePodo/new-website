@@ -1,4 +1,4 @@
-import { RESUME } from "~services/links";
+const { RESUME } = require("./services/links");
 
 module.exports = {
   reactStrictMode: true,
