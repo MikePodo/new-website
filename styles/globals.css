@@ -25,5 +25,5 @@ a {
 }
 
 button {
-  font-family: "Red Hat Display", sans-serif;
+  font-family: "Red Hat Display", sans-serif !important;
 }
