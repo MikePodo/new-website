@@ -1,6 +1,10 @@
 module.exports = {
   certificates: [
     {
+      name: "CS50",
+      image: "/assets/certificates/cs50.jpg",
+    },
+    {
       name: "React",
       image: "/assets/certificates/react.jpg",
     },
@@ -15,6 +19,10 @@ module.exports = {
     {
       name: "React Native II",
       image: "/assets/certificates/react-native-2.jpg",
+    },
+    {
+      name: "TypeScript",
+      image: "/assets/certificates/typescript.jpg",
     },
     {
       name: "JavaScript",
