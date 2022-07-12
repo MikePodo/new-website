@@ -9,6 +9,10 @@ module.exports = {
       image: "/assets/certificates/react.jpg",
     },
     {
+      name: "Full Stack React",
+      image: "/assets/certificates/fullstack-react.jpg",
+    },
+    {
       name: "Redux",
       image: "/assets/certificates/redux.jpg",
     },

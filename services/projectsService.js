@@ -8,6 +8,20 @@ module.exports = {
       url: "https://punctually.vercel.app",
     },
     {
+      title: "Styled",
+      subtitle: "a full stack ecommerce site",
+      image: "/assets/projects/styled.jpg",
+      technologies: [
+        "NextJS",
+        "Styled-Components",
+        "Framer Motion",
+        "Strapi",
+        "Auth0",
+        "Stripe",
+      ],
+      url: "https://mikepodo-styled.vercel.app/",
+    },
+    {
       title: "Twitterclone",
       subtitle: "a semi-functioning clone of Twitter",
       image: "/assets/projects/twitter.jpg",
