@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState } from "react";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import useMediaQuery from "@mui/material/useMediaQuery";
@@ -39,7 +39,7 @@ const Experience = () => {
           {value === 0 && (
             <div className={styles.tabPanel}>
               <h2>
-                <span>Fight™</span> - Chief Technology Officer
+                <span>Fight™</span> - Software Engineer
               </h2>
               <h3>February 2021 - Present</h3>
               <h2>- Frontend Software Developer Intern</h2>
@@ -88,7 +88,7 @@ const Experience = () => {
               <h2>
                 <span>NomɅd</span>{" "}
                 <span className={styles.subText}>(formerly VHomes)</span> - Head
-                of Design Frontend Developer
+                of Design Software Engineer
               </h2>
               <h3>March 2021 - June 2021</h3>
               <h2>- Frontend Web Developer/Product Designer Intern</h2>
