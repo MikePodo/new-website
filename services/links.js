@@ -2,5 +2,5 @@ module.exports = {
   GITHUB: "https://github.com/MikePodo",
   LINKEDIN: "https://www.linkedin.com/in/mikepodo/",
   RESUME:
-    "https://drive.google.com/file/d/1tzMfjwZK4PVkqqliT5-pxrgU2qJs-EYE/view?usp=sharing",
+    "https://docs.google.com/document/d/1VVJeREQX14V-KlVX5UOdyxlkf3dPZNz_C4Gxztkyrqc/edit?usp=sharing",
 };
