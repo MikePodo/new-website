@@ -20,7 +20,7 @@ const PageHead = ({ route }) => {
   return (
     <div>
       <Head>
-        <title>{`MikePodo${getTitle()}`}</title>
+        <title>{`Michael Podolsky${getTitle()}`}</title>
       </Head>
     </div>
   );

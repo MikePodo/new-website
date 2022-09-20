@@ -18,6 +18,20 @@ export default function Document() {
           href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
           rel="stylesheet"
         ></link>
+        <meta
+          name="description"
+          content="Michael Podolsky | React HTML CSS Software Engineer"
+        />
+        <meta
+          property="og:title"
+          content="Michael Podolsky | Software Engineer"
+        />
+        <meta
+          property="og:description"
+          content="Michael Podolsky | React HTML CSS Sofrware Engineer"
+        />
+        <meta property="og:url" content="https://mikepodo.net/" />
+        <meta property="og:type" content="website" />
       </Head>
       <body>
         <Main />
