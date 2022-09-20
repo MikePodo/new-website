@@ -19,16 +19,16 @@ export default function Document() {
           rel="stylesheet"
         ></link>
         <meta
-          name="description"
-          content="Michael Podolsky | React HTML CSS Software Engineer"
-        />
-        <meta
           property="og:title"
           content="Michael Podolsky | Software Engineer"
         />
         <meta
+          name="description"
+          content="Michael Podolsky | Software Engineer who specializes in React, Next.js, HTML, CSS"
+        />
+        <meta
           property="og:description"
-          content="Michael Podolsky | React HTML CSS Sofrware Engineer"
+          content="Michael Podolsky | Software Engineer who specializes in React, Next.js, HTML, CSS"
         />
         <meta property="og:url" content="https://mikepodo.net/" />
         <meta property="og:type" content="website" />
