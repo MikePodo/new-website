@@ -1,4 +1,4 @@
-import { Analytics } from "@vercel/analytics/react";
+// import { Analytics } from "@vercel/analytics/react";
 import { library, config } from "@fortawesome/fontawesome-svg-core";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
@@ -21,7 +21,7 @@ function MyApp({ Component, pageProps }) {
         <Vanta />
         <Navbar />
         <Component {...pageProps} />
-        <Analytics />
+        {/* <Analytics /> */}
       </ThemeProvider>
     </div>
   );
