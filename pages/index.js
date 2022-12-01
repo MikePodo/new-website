@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Typewriter from "typewriter-effect";
 import Button from "@mui/material/Button";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 import styles from "~styles/home.module.scss";
 import links from "~services/links";
@@ -59,10 +60,7 @@ const Home = () => {
                 handleRedirect(links.GITHUB);
               }}
             >
-              <FontAwesomeIcon
-                icon={["fab", "github"]}
-                className={styles.socialIcon}
-              />
+              <FontAwesomeIcon icon={faGithub} className={styles.socialIcon} />
 
               <h4>Github</h4>
             </div>
@@ -73,7 +71,7 @@ const Home = () => {
               }}
             >
               <FontAwesomeIcon
-                icon={["fab", "linkedin"]}
+                icon={faLinkedin}
                 className={`${styles.socialIcon} ${styles.linkedin}`}
               />
               <h4>LinkedIn</h4>

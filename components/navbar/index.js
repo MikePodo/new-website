@@ -4,6 +4,7 @@ import SwipeableDrawer from "@mui/material/SwipeableDrawer";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import Button from "@mui/material/Button";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 import styles from "./index.module.scss";
 import { RESUME } from "~services/links";
@@ -87,7 +88,7 @@ const Navbar = () => {
         ) : (
           <>
             <FontAwesomeIcon
-              icon="bars"
+              icon={faBars}
               className={styles.mobileNavMenuIcon}
               onClick={() => setMobileNavOpen(!mobileNavOpen)}
             />
