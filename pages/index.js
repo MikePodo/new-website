@@ -32,10 +32,10 @@ const Home = () => {
               skipAddStyles
               options={{
                 strings: [
-                  "Frontend Developer.",
                   "Software Engineer.",
-                  "Designer.",
+                  "Frontend Developer.",
                   "React Developer.",
+                  "Designer.",
                   "Coder.",
                   "Builder.",
                 ],
