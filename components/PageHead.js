@@ -10,7 +10,7 @@ const PageHead = ({ route }) => {
         return " | Experience";
       case "/projects":
         return " | Projects";
-      case " | /certificates":
+      case "/certificates":
         return " | Certificates";
       default:
         return " | Developer";
